@@ -1,7 +1,6 @@
 
 # Laporan Praktikum Minggu [1]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
-
+Topik: [Arsitektur Sistem Operasi dan Kernel]
 ---
 
 ## Identitas
@@ -12,14 +11,15 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
-
+mengetahui tentang Arsitektur Sistem Operasi dan Kernel, dan juga pembuatan akun dalam ubuntu
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+  Arsitektur Sistem Operasi dan Kernel
+kode/perintah yang digunakan dalam praktikum:
+uname -a → identifikasi kernel & arsitektur OS
+lsmod | head → modularitas kernel & device driver
+dmesg | head → proses booting & logging internal kernel
 
 ---
 
@@ -28,6 +28,14 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 2. Perintah yang dijalankan.  
 3. File dan kode yang dibuat.  
 4. Commit message yang digunakan.
+   Pertama install ubuntu di microsoft store, jika sudah lalu klik tombol windows+R pada keyboard, lalu masukan kata "cmd".
+lalu masukan perintah
+wsl  --install  → untuk install ubuntu itu tadi, tunggu sampai selesai.
+jika sudan selesai kemudian buat akun di ubuntu dengan kode:
+uname -a  → membuat user name saya (aska), lalu masukan pasword, tunggu sampai selesai kemudian masukan kode kedua:
+lsmod | head , →  modularitas kernel & device driver, tunggu sampai kode nya selesai, kemudia masukan kode yang ke tiga :
+dmesg | head , → proses booting & logging internal kernel, tunggu sampai prosesnya selesai
+jika proses yang ketika sudah selesai maka akun yang di baut itu sudah jadi.
 
 ---
 

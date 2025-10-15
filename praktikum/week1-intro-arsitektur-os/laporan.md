@@ -1,13 +1,13 @@
 
-# Laporan Praktikum Minggu [X]
+# Laporan Praktikum Minggu [1]
 Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : [Aska ASofri Amrillah]  
+- **NIM**   : [250202919]  
+- **Kelas** : [1IKRA]
 
 ---
 
@@ -60,12 +60,13 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. [tiga fungsi utama sistem operasi.]  
+   Jawaban:Manajemen Sumber Daya,Menyediakan Antarmuka (Interface) ,Platform untuk Menjalankan Aplikasi
+2. [Jelaskan perbedaan antara kernel mode dan user mode.]  
+   Jawaban:Kernel mode dan user mode adalah dua mode operasi fundamental dari sebuah CPU yang digunakan oleh sistem operasi untuk melindungi dirinya sendiri dan komponen sistem penting lainnya dari kerusakan yang tidak disengaja oleh program aplikasi.
+Perbedaan utamanya terletak pada tingkat hak akses terhadap perangkat keras dan memori sistem.
+3. [Sebutkan contoh OS dengan arsitektur monolithic dan microkernel.]  
+   Jawaban:Contoh sistem operasi (OS) dengan arsitektur monolitik yaitu Linux dan Windows 9x, sedangkan contoh OS dengan arsitektur mikrokernel adalah QNX, Symbian, dan MINIX. 
 
 ---
 
@@ -73,7 +74,8 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 Tuliskan secara singkat:
 - Apa bagian yang paling menantang minggu ini?  
 - Bagaimana cara Anda mengatasinya?  
-
+  Yang paling emnantang di minggu pertama adalah cara memahami penggunaan akun github dan juga cara eksekusi.
+  cara saya mengatasinya dangan terus mencoba dan tanya kepada teman yang sudah faham bagaimana cara melakukan nya.
 ---
 
 **Credit:**  

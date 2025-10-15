@@ -52,7 +52,7 @@ dmesg | head
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/example.png)
-
+praktikum/week1-intro-arsitektur-os/screenshots
 ---
 
 ## Analisis
@@ -64,24 +64,18 @@ jawaban:
   2. | head: Simbol | (pipe) mengirimkan output dari lsmod ke perintah head, yang kemudian hanya menampilkan 10 baris pertama dari daftar tersebut agar lebih mudah dibaca.
   3. dmesg (display message) mencetak semua pesan yang dihasilkan oleh kernel Linux, terutama selama proses startup (booting). Pesan ini berisi informasi penting tentang perangkat keras yang terdeteksi, driver yang dimuat, dan kesalahan (error) apa pun yang mungkin terjadi.
      | head: Sama seperti sebelumnya, ini membatasi output hanya pada 10 baris pertama, yang biasanya menunjukkan pesan-pesan paling awal saat sistem mulai menyala.
--uname -a → identifikasi kernel & arsitektur OS
-
-lsmod → modularitas kernel & device driver
-
-dmesg → proses booting & logging internal kernel
 
 uname -a → identifikasi kernel & arsitektur OS
 
-lsmod → modularitas kernel & device driver
+lsmod | head → modularitas kernel & device driver
 
-dmesg → proses booting & logging internal kernel
+dmesg | head    → proses booting & logging internal kernel
 
 Dengan memahami outputnya, kita bisa menghubungkan praktik Linux dengan teori inti sistem operasi seperti system call interface, kernel space/user space separation, dan modular kernel design
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
-
+rancangan struktur, komponen, dan cara kerjanya, di mana kernel adalah jantungnya yang bertindak sebagai jembatan antara perangkat lunak dan perangkat keras
 ---
 
 ## Quiz

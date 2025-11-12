@@ -12,11 +12,23 @@ Topik: [manajemen file dan permission di linux]
 ---
 
 ## Tujuan
-mahasiswa mampu mengoprasikan perintah linux dasar dengan benar, memahami sistem izin (permission), dan mendokumentasikan hasilnya dalam format laporan git.
+1.Menggunakan perintah ls, pwd, cd, cat untuk navigasi file dan direktori.
+2.Menggunakan chmod dan chown untuk manajemen hak akses file.
+3.Menjelaskan hasil output dari perintah Linux dasar.
+4.Menyusun laporan praktikum dengan struktur yang benar.
+5.Mengunggah dokumentasi hasil ke Git Repository tepat waktu.
+
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+1. Pengolahan File dan Direktori Menggunakan Perintah Dasar Linux
+Pengolahan file dan direktori di Linux dilakukan melalui command line interface (CLI) dengan berbagai perintah dasar untuk membuat, melihat, menyalin, memindahkan, menghapus, atau mengatur file dan folder.
+2. Konsep Permission (Hak Akses)
+Permission adalah izin akses terhadap file atau direktori di Linux.
+3. Konsep Ownership (Kepemilikan)
+Setiap file dan direktori di Linux dimiliki oleh:
+-User (pemilik individu)
+-Group (kelompok pengguna)
 
 ---
 
@@ -25,6 +37,24 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 2. Perintah yang dijalankan.  
 3. File dan kode yang dibuat.  
 4. Commit message yang digunakan.
+
+1.- setup evironmen
+  - eksperimen 1 - navigsi sistem file
+  - eksperimen 2-membaca file
+  - eksperimen 3-perission and ownership
+2. - setup evironmen
+    menggunakan ubuntu
+   - eksperimen 1 - navigsi sistem file - perintah yang di jalankan:
+     pwd
+     ls -1
+     cd /tmp
+     ls -a
+   - eksperimen 2-membaca file - perintah yang di jalankan:
+     cat /etc/passwd | head -n 5
+   - eksperimen 3-perission and ownership perintah yang di jalankan:
+     
+     
+     
 
 ---
 

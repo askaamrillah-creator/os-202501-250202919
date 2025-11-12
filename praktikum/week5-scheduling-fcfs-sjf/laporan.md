@@ -33,19 +33,22 @@ adil karena di proses berdasarkan urutan kedatangan - tidak efisien untuk sistem
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
+1. Langkah-langkah yang dilakukan. 
 2. Perintah yang dijalankan.  
 3. File dan kode yang dibuat.  
 4. Commit message yang digunakan.
 
+   1.-siapkan data proses menggunakan table
+     -eksperimen 1-FCFS
+     -eksperimen 2 SJF
+    
+   2. =AVERAGE() untuk menghitung rata rata
+   3. 
+
 ---
 
 ## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
+=AVERAGE()
 ```
 
 ---

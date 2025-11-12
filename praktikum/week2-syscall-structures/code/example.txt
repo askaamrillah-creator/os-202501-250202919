@@ -56,3 +56,4 @@ di upload ke screnshoot
 Dengan kombinasi mekanisme perangkat keras dan perangkat lunak, OS mencegah program user memodifikasi atau mengakses area kernel secara langsung.
 c. sebutkan contoh system call yang sering di gunakan di linux
   -open(), read(), write(), fork(), dan execve()
+

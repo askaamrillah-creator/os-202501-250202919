@@ -52,7 +52,11 @@ Setiap file dan direktori di Linux dimiliki oleh:
    - eksperimen 2-membaca file - perintah yang di jalankan:
      cat /etc/passwd | head -n 5
    - eksperimen 3-perission and ownership perintah yang di jalankan:
-     
+     echo "Hello <NAME><NIM>" > percobaan.txt
+     ls -l percobaan.txt
+     chmod 600 percobaan.txt
+     ls -l percobaan.txt
+3. 
      
      
 

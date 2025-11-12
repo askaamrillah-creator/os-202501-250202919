@@ -1,0 +1,35 @@
+1. Eksperimen 1 (system call yang muncul dan penjelasan fungsinya)
+strace ls
+execve() Menjalankan program baru, Kernel mengeksekusi file biner /bin/ls.
+brk() / mmap() Manajemen memori, Mengatur heap dan memetakan library ke memori.
+access() Mengecek hak akses file, Mengecek apakah file konfigurasi atau library bisa diakses.
+openat() Membuka file, Membuka file seperti /etc/ld.so.cache, direktori saat ini, dsb.
+read() Membaca isi file, Membaca data dari file atau direktori.
+
+2. Eksperimen 2 - menelusuri system call file I/O
+strace -e trace=open,read,write,close cat /etc/passwd
+analisis bagaimana ile di buka,di baca dan di tutup oleh kernel
+- membuka file 
+strace -e trace=open 
+Kernel mencari file /etc/passwd di sistem file. Jika ditemukan dan pengguna punya izin baca, kernel membuat
+ile descriptor (FD), misalnya 3, yang menjadi “pegangan” program ke file itu.
+- membaca isi file
+read(3, buffer,
+rogram cat meminta kernel membaca hingga 4096 byte dari file descriptor 3. Kernel membaca blok data dari disk
+(melalui page cache) dan menyalinnya ke buffer cat. Hasilnya dikembalikan ke user space.
+- menulis ke layar
+write
+Program cat lalu mengirim isi buffer ke file descriptor 1, yaitu stdout (layar terminal).Kernel meneruskan data ini ke
+driver terminal agar muncul di layar.
+- menutup file
+close cat /etc/passwd
+Setelah selesai membaca, cat meminta kernel menutup file descriptor 3.Kernel melepaskan semua struktur
+internal yang terkait dengan file tersebut.
+
+3. Eksperimen 3- mode user vs kernel
+dmesg | tail -n 10
+amati log kernel yang muncul, apa perbedaan output ini dengan output program biasa
+- Output program biasa → dihasilkan oleh proses user-space, lewat system call write() ke stdout (layar).
+Contoh: ls, cat, echo, python, dll.
+- Log kernel (dmesg) → dihasilkan oleh kode kernel (C di dalam Linux), dan dikirim ke ring buffer kernel, bukan langsung ke layar.
+Hanya ditampilkan lewat dmesg atau terbaca lewat /proc/kmsg.

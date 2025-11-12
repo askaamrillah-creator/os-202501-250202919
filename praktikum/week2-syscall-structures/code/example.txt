@@ -33,3 +33,26 @@ amati log kernel yang muncul, apa perbedaan output ini dengan output program bia
 Contoh: ls, cat, echo, python, dll.
 - Log kernel (dmesg) → dihasilkan oleh kode kernel (C di dalam Linux), dan dikirim ke ring buffer kernel, bukan langsung ke layar.
 Hanya ditampilkan lewat dmesg atau terbaca lewat /proc/kmsg.
+
+
+Tugas 
+1. dokumentasi hasil eksperimen strace dan dmesg dalam bentuk tabel observasi
+| Aspek                         | `strace`                                                     | `dmesg`                                                |
+| ----------------------------- | ------------------------------------------------------------ | ------------------------------------------------------ |
+| **Fungsi utama**              | Melacak system call dari program user-space                  | Menampilkan log internal kernel                        |
+| **Sumber data**               | Aktivitas proses (user → kernel)                             | Kernel ring buffer                                     |
+| **Jenis informasi**           | System call seperti `open()`, `read()`, `write()`, `close()` | Pesan status perangkat keras, driver, error kernel     |
+| **Waktu eksekusi**            | Saat program dijalankan                                      | Terus diperbarui oleh kernel                           |
+| **Siapa yang menulis log**    | Program (user space) melalui system call                     | Kernel dan modulnya sendiri                            |
+| **Contoh konteks penggunaan** | Analisis perilaku program                                    | Mendiagnosis perangkat keras, crash, atau error kernel |
+
+2. Diagram alur
+di upload ke screnshoot
+
+3. a. mengapa system call sangat penting untuk keamana os?
+  -System call merupakan komponen penting dalam menjaga keamanan sistem operasi karena berfungsi sebagai penghubung antara ruang pengguna (user space) dan ruang kernel (kernel space). Semua akses ke sumber daya penting seperti file, memori, dan perangkat keras harus melalui system call, sehingga kernel dapat mengontrol setiap tindakan yang dilakukan program. Dengan adanya mekanisme ini, sistem operasi dapat memeriksa izin akses, mencegah eksekusi kode berbahaya, dan membatasi operasi yang tidak sah. System call juga memungkinkan penerapan kebijakan keamanan seperti sandboxing dan access control list, yang menjaga agar proses pengguna tidak dapat mengganggu proses lain atau sistem inti. Selain itu, aktivitas system call dapat dicatat untuk keperluan audit dan deteksi serangan. Tanpa system call, program dapat langsung mengakses kernel, yang akan sangat berisiko terhadap integritas, stabilitas, dan keamanan sistem operasi secara keseluruhan.
+ b. Bagaimana OS memastikan transisi user-kernel berjalan aman?
+  -OS memastikan transisi dari user mode ke kernel mode berjalan aman dengan cara membatasi jalur masuk (system call), memvalidasi setiap parameter, dan memanfaatkan proteksi hardware CPU.
+Dengan kombinasi mekanisme perangkat keras dan perangkat lunak, OS mencegah program user memodifikasi atau mengakses area kernel secara langsung.
+c. sebutkan contoh system call yang sering di gunakan di linux
+  -open(), read(), write(), fork(), dan execve()

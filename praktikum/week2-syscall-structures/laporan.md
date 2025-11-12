@@ -45,12 +45,17 @@ Mengatur cara data disimpan dan diakses di media penyimpanan.
 ---
 
 ## Langkah Praktikum
-1. menjalankan perintah dengan menggunakan software ubuntu.  
+1.- Setup evironment
+    1. menggunakan ubuntu
+    2. analisis system call
+    3. menelusuri system call file I/O
+    4. Mode user vs kerenel
 2. Perintah yang dijalankan.
    strace ls
    strace -e trace=open, read, write, close cat /etc/passwd
    dmesg | tail -n 10
 4. File dan kode yang dibuat.
+   
    
 6. Commit message yang digunakan.
 
@@ -121,6 +126,9 @@ Praktik & teori saling mendukung: Dengan strace dan dmesg, kita bisa melihat sec
 Tuliskan secara singkat:
 - Apa bagian yang paling menantang minggu ini?  
 - Bagaimana cara Anda mengatasinya?
+
+  - bagian yang paling menantang adalah mencoba hal baru
+  - dengan mencari tau hal itu lebih dalam lagi
   
 
 ---

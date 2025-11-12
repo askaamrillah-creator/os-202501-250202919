@@ -1,5 +1,5 @@
 
-# Laporan Praktikum Minggu [X]
+# Laporan Praktikum Minggu [2]
 Topik: arsitektur sistem oprasi
 ---
 
@@ -11,7 +11,10 @@ Topik: arsitektur sistem oprasi
 ---
 
 ## Tujuan
-mempelajari arsitektur sistem dasar sistem oprasi: bagaimana komponen OS bekerja, serta bagaimna interaksi antara user, aplikasi , kernel, dan hadware terjadi
+1.Menjelaskan konsep dan fungsi system call dalam sistem operasi.
+2.Mengidentifikasi jenis-jenis system call dan fungsinya.
+3.Mengamati alur perpindahan mode user ke kernel saat system call terjadi.
+4.Menggunakan perintah Linux untuk menampilkan dan menganalisis system call.
 
 ---
 

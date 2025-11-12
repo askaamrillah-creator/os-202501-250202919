@@ -55,10 +55,16 @@ Mengatur cara data disimpan dan diakses di media penyimpanan.
    strace -e trace=open, read, write, close cat /etc/passwd
    dmesg | tail -n 10
 4. File dan kode yang dibuat.
-   
-   
+   strace ls
+   /bin/ls, direktori saat ini (.), library sistem
+   strace -e trace=open,read,write,close cat /etc/passwd
+   /etc/passwd
+   `dmesg
+    tail -n 10`
 6. Commit message yang digunakan.
-
+ git add
+ git commit -m
+ git push origin main
 ---
 
 ## Kode / Perintah

@@ -37,6 +37,10 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 - membaca file
   cat /etc/paswwd | head -n 5
 - permission & ownership
+  echo "Hello <NAME><NIM>" > percobaan.txt
+  ls -l percobaan.txt
+  chmod 600 percobaan.txt
+  ls -l percobaan.txt
    
 
 ---
@@ -50,7 +54,24 @@ Sertakan screenshot hasil percobaan atau diagram:
 ## Analisis
 - Jelaskan makna hasil percobaan.  
 - Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?
+  analisis
+- makna hasil percobaan
+  pwd (menampilkan isi folder)
+  ls -1 (melihat daftar isi satu baris)
+  cd /tmp (pindah ke folder sementara sistem)
+  ls -a (melihat semua isi folder)
+  
+  cat /ets/passwd | head -n 5 (menampilkan isi file yang berisi daftar pengguna, menampilkan 5     baris pertama dari hasil tersebut)
+  
+  echo "Hello <NAME><NIM>" > percobaan.txt
+  ls -l percobaan.txt
+  chmod 600 percobaan.txt
+  ls -l percobaan.txt
+  (memahami cara membuat file, melihat statusnya, dan melindungi file dari akses pengguna lain dengan pengaturan izin (permission)).
+
+  
+  
 
 ---
 
